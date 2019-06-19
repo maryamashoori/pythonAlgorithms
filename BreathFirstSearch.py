@@ -1,31 +1,41 @@
-from Queue import Queue
-graph = {'A': ['B', 'C'],
-         'B': ['C', 'D'],
-         'C': ['D'],
-         'D': ['C', 'E', 'F'],
-         'E': ['D'],
-         'F': ['D']}
 
-def BreathFirstSearch(start, end):
+#   BinarySearchTree.py
+#   PythonAlgorithms
+#
+#   Created by Maryam Ashoori on June 2019.
+
+from Queue import Queue
+
+# This function performs a breath first traversal of the tree
+# Each node is added to a queue.
+# Once popped from the queue, the popped node is added to the path and its neighbors get added to the queue.
+
+def BreathFirstSearch(graph):
     q = Queue()
     path = []
-    q.push(start)
+    q.push (list(graph)[0])
     while q != None:
         node = q.pop()
         if not node in path:
             path.append(node)
             print(path)
-            if node == end:
+            if len(path) == len(graph):
                 return path
             else:
-                for neighbour in graph[node]:
-                    if not neighbour in path:
-                        q.push(neighbour)
-                        print(neighbour, "added")
+                for neighbor in graph[node]:
+                    if not neighbor in path:
+                        q.push(neighbor)
+                        print(neighbor, "added")
     return path
 
 if __name__ == "__main__":
-    BreathFirstSearch ('A', 'F')
+    graph = {'A': ['B', 'C'],
+             'B': ['C', 'D'],
+             'C': ['D'],
+             'D': ['C', 'E', 'F'],
+             'E': ['D'],
+             'F': ['D']}
+    BreathFirstSearch (graph)
 
 
 
