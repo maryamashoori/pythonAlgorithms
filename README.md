@@ -4,6 +4,11 @@ Python implementations of common computer science data structures & algorithms.
 
 ## Data Structures 
 - [Binary Search Tree](BinarySearchTree.py)
+- [Queue](Queue.py)
+
+## Algorithms
+- Breadth First Search [[Algorithm](https://en.wikipedia.org/wiki/Breadth-first_search)]  [[Implementation](BreathFirstSearch.py)]
+
 
 ## Wishlist
 
@@ -21,7 +26,6 @@ Python implementations of common computer science data structures & algorithms.
 - [Trie](https://en.wikipedia.org/wiki/Trie)
 - [Union Find](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
 - [Graph](https://en.wikipedia.org/wiki/Graph_(abstract_data_type))
-- Breadth First Search [[description](https://en.wikipedia.org/wiki/Breadth-first_search)]
 - [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search)
 - [Prim's Minimum Spanning Tree](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
 - [Fisher-Yates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle)
