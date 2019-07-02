@@ -11,7 +11,7 @@ class Queue:
     def push(self, value):
         self.queue.append(value)
 
-    def print(self):
+    def printq(self):
         for item in self.queue:
             print(item)
 
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     q = Queue()
     q.push (5)
     q.push (10)
-    q.print()
+    q.printq()
     print("queue:", q) #calling __repr__
     print ("The item at the front of the queue is", q.front())
     print (q.pop(), "is popped")

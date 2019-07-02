@@ -18,14 +18,12 @@ def BreathFirstSearch(graph):
         node = q.pop()
         if not node in path:
             path.append(node)
-            print(path)
             if len(path) == len(graph):
                 return path
             else:
                 for neighbor in graph[node]:
                     if not neighbor in path:
                         q.push(neighbor)
-                        print(neighbor, "added")
     return path
 
 if __name__ == "__main__":
@@ -35,7 +33,7 @@ if __name__ == "__main__":
              'D': ['C', 'E', 'F'],
              'E': ['D'],
              'F': ['D']}
-    BreathFirstSearch (graph)
+    print (BreathFirstSearch (graph))
 
 
 

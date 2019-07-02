@@ -37,16 +37,16 @@ class BinarySearchTree:
             print ("item already in the tree")
 
     # Traversal
-    def print(self):
+    def traverse(self):
         if self.root != None:
-            self._print (self.root)
+            self._traverse (self.root)
 
-    def _print(self, curr_node):
+    def _traverse(self, curr_node):
         if curr_node == None:
             return
-        self._print (curr_node.left)
+        self._traverse (curr_node.left)
         print (curr_node.value)
-        self._print(curr_node.right)
+        self._traverse(curr_node.right)
 
     # Height
     def height (self):
@@ -86,7 +86,7 @@ tree.insert(5)
 tree.insert(6)
 tree.insert(4)
 tree.insert(11)
-tree.print()
+tree.traverse()
 print ("Height =" , tree.height())
 print ("Target found = ", tree.findTarget(15))
 
