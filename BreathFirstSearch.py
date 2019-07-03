@@ -12,12 +12,13 @@ from Queue import Queue
 # Once popped from the queue, the popped node is added to the path and its neighbors get added to the queue.
 # Complexity: O(n)
 
-def BreathFirstSearch(graph):
+
+def breath_first_search(graph):
     q = Queue()
     path = []
-    q.push (list(graph)[0])
+    q.insert(list(graph)[0])
     while q != None:
-        node = q.pop()
+        node = q.delete()
         if not node in path:
             path.append(node)
             if len(path) == len(graph):
@@ -25,8 +26,9 @@ def BreathFirstSearch(graph):
             else:
                 for neighbor in graph[node]:
                     if not neighbor in path:
-                        q.push(neighbor)
+                        q.insert(neighbor)
     return path
+
 
 if __name__ == "__main__":
     graph = {'A': ['B', 'C'],
@@ -35,7 +37,7 @@ if __name__ == "__main__":
              'D': ['C', 'E', 'F'],
              'E': ['D'],
              'F': ['D']}
-    print (BreathFirstSearch (graph))
+    print(breath_first_search(graph))
 
 
 
