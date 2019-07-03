@@ -19,7 +19,7 @@ def breath_first_search(graph):
     q.insert(list(graph)[0])
     while q != None:
         node = q.delete()
-        if not node in path:
+        if node not in path:
             path.append(node)
             if len(path) == len(graph):
                 return path
