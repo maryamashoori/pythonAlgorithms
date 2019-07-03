@@ -25,7 +25,7 @@ def breath_first_search(graph):
                 return path
             else:
                 for neighbor in graph[node]:
-                    if not neighbor in path:
+                    if neighbor not in path:
                         q.insert(neighbor)
     return path
 
