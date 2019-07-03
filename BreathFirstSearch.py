@@ -1,14 +1,16 @@
 
-#   BinarySearchTree.py
-#   PythonAlgorithms
+#   An implementation of Breath First Search
+#   https://en.wikipedia.org/wiki/Breadth-first_search
 #
-#   Created by Maryam Ashoori on June 2019.
+#   Created by Maryam Ashoori on July 2019.
+#   Tested in Python 3.7
 
 from Queue import Queue
 
 # This function performs a breath first traversal of the tree
 # Each node is added to a queue.
 # Once popped from the queue, the popped node is added to the path and its neighbors get added to the queue.
+# Complexity: O(n)
 
 def BreathFirstSearch(graph):
     q = Queue()
