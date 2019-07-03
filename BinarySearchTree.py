@@ -1,8 +1,9 @@
 
-#   BinarySearchTree.py
-#   PythonAlgorithms
+#   An implementation of Binary Search Tree
+#   https://en.wikipedia.org/wiki/Binary_search_tree
 #
-#   Created by Maryam Ashoori on June 2019.
+#   Created by Maryam Ashoori on July 2019.
+#   Tested in Python 3.7
 
 class Node:
     def __init__(self, x):
@@ -14,7 +15,8 @@ class BinarySearchTree:
     def __init__(self):
         self.root = None
 
-    # Insertion
+    # Insertion : inserts an element to the BST
+    # Complexity: O(log n)
     def insert(self, value):
         if (self.root == None):
             self.root = Node(value)
@@ -36,39 +38,42 @@ class BinarySearchTree:
         else:
             print ("item already in the tree")
 
-    # Traversal
-    def traverse(self):
+    # Traversal : Traverses all the elements in the tree
+    # Complexity: O(n)
+    def print(self):
         if self.root != None:
-            self._traverse (self.root)
+            self._print(self.root)
 
-    def _traverse(self, curr_node):
+    def _print(self, curr_node):
         if curr_node == None:
             return
-        self._traverse (curr_node.left)
-        print (curr_node.value)
-        self._traverse(curr_node.right)
+        self._print(curr_node.left)
+        print(curr_node.value)
+        self._print(curr_node.right)
 
-    # Height
-    def height (self):
+    # Height : Returns the hight of the tree
+    # Complexity: O(log n)
+    def height(self):
         if self.root != None:
             return self._height (self.root, 0)
         else:
             return 0
 
-    def _height (self, curr_node, height):
+    def _height(self, curr_node, height):
         if curr_node != None:
             return max (self._height (curr_node.left, height), self._height(curr_node.right, height))+1
         else:
             return height
 
-    # Check membership
+    # Search: searches if an element is in the tree
+    # Complexity: O(log n)
     def findTarget(self, value):
         if self.root != None:
             return self._findTarget (self.root, value)
         else:
             return False
 
-    def _findTarget (self, curr_node, target):
+    def _findTarget(self, curr_node, target):
         if curr_node != None:
             if target == curr_node.value:
                 return True
@@ -86,8 +91,8 @@ tree.insert(5)
 tree.insert(6)
 tree.insert(4)
 tree.insert(11)
-tree.traverse()
-print ("Height =" , tree.height())
+tree.print()
+print ("Height =", tree.height())
 print ("Target found = ", tree.findTarget(15))
 
 
