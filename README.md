@@ -12,6 +12,7 @@ Python implementations of common computer science data structures & algorithms.
 - [Insertion Sort](InsertionSort.py)
 - [Merge Sort](MergeSort.py)
 - [Heap Sort](MaxHeap.py)
+- [Quicksort and Randomized Quicksort](QuickSort.py)
 
 ## Searching Algorithms
 - [Breadth First Search](BreathFirstSearch.py)
