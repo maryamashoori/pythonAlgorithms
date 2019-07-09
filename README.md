@@ -5,10 +5,16 @@ Python implementations of common computer science data structures & algorithms.
 ## Data Structures 
 - [Binary Search Tree](BinarySearchTree.py)
 - [Queue](Queue.py)
+- [Max Heap](MaxHeap.py)
+- [Priority Queues](PriorityQueue.py)
 
-## Algorithms
-- Breadth First Search [[Algorithm](https://en.wikipedia.org/wiki/Breadth-first_search)]  [[Implementation](BreathFirstSearch.py)]
+## Sorting Algorithms
+- [Insertion Sort](InsertionSort.py)
+- [Merge Sort](MergeSort.py)
+- [Heap Sort](MaxHeap.py)
 
+## Searching Algorithms
+- [Breadth First Search](BreathFirstSearch.py)
 
 ## Wishlist
 
@@ -21,7 +27,6 @@ Python implementations of common computer science data structures & algorithms.
 - [Floyd-Warshall](https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm)
 - [Maze Generation](https://en.wikipedia.org/wiki/Maze_generation_algorithm)
 - [Red-Black Tree](https://en.wikipedia.org/wiki/Red–black_tree)
-- [Heap](https://en.wikipedia.org/wiki/Heap_(data_structure))
 - [Priority Queue](https://en.wikipedia.org/wiki/Priority_queue)
 - [Trie](https://en.wikipedia.org/wiki/Trie)
 - [Union Find](https://en.wikipedia.org/wiki/Disjoint-set_data_structure)
@@ -29,9 +34,6 @@ Python implementations of common computer science data structures & algorithms.
 - [Depth First Search](https://en.wikipedia.org/wiki/Depth-first_search)
 - [Prim's Minimum Spanning Tree](https://en.wikipedia.org/wiki/Prim%27s_algorithm)
 - [Fisher-Yates](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle)
-- [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
-- [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
-- [Heap Sort](https://en.wikipedia.org/wiki/Heapsort)
 - [Boyer-Moore](https://en.wikipedia.org/wiki/Boyer–Moore_string_search_algorithm)
 - [Knuth-Morris-Pratt](https://en.wikipedia.org/wiki/Knuth–Morris–Pratt_algorithm)
 
