@@ -50,6 +50,12 @@ class Max_heap:
             self.heap_size -= 1
             self.max_heapify(0)
 
+    def is_empty(self):
+        if self.heap_size is 0:
+            return True
+        else:
+            return False
+
     def __repr__(self):
         # return ",".join(map(lambda x: str(x), self.queue))
         return str(self.elements)
@@ -58,4 +64,5 @@ if __name__ == "__main__":
     myheap = Max_heap([16, 4, 10, 14, 7, 9, 3, 2, 8, 1])
     print (myheap)
     myheap.heap_sort()
+    print (myheap.is_empty())
 
