@@ -3,8 +3,15 @@
 #   A Python implementation of Priority Queue using MaxHeap
 #   https://en.wikipedia.org/wiki/Priority_queue
 #
-#   Created by Maryam Ashoori on July 2019.
+#   Created by Maryam Ashoori on July 2019
 #   Tested in Python 3.7
+#
+#
+#   Methods implemented:
+#       1- return the max element
+#       2- remove the max element from the queue
+#       3- increase key
+#       4- insert an element to the queue
 
 from maxheap import Max_heap
 

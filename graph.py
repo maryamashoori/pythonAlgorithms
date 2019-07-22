@@ -2,8 +2,9 @@
 #   An implementation of Breath First Search
 #   https://en.wikipedia.org/wiki/Breadth-first_search
 #
-#   Created by Maryam Ashoori on July 2019.
-#   Tested in Python 3.7
+#   Methods implemented:
+#       1- add edges to the graph
+#       2- breath first search
 
 from queue import Queue
 from collections import defaultdict

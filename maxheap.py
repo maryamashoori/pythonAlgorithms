@@ -3,8 +3,13 @@
 #   A Python implementation of Max Heap
 #   https://en.wikipedia.org/wiki/Heapsort
 #
-#   Created by Maryam Ashoori on July 2019.
+#   Created by Maryam Ashoori on July 2019
 #   Tested in Python 3.7
+#
+#
+#   Methods implemented:
+#       1- max heapify
+#       2- heapsort
 
 
 class Max_heap:
