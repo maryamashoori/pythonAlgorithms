@@ -27,7 +27,7 @@ class Queue:
     # Time complexity: O(n)
     def print(self):
         if self.is_empty():
-            print ("Queue is empty")
+            print("Queue is empty")
         else:
             for item in self.queue:
                 print(item)
