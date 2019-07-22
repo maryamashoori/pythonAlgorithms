@@ -15,9 +15,37 @@ Python implementations of common computer science data structures & algorithms.
         - find the min element in the tree
         
 - [Queue](queue.py)
+
+    Methods implemented:
+        
+        - enqueue
+        - print
+        - return the front of the queue
+        - dequeue
+        - check if the queue is empty
+
 - [Max Heap](maxheap.py)
+
+    Methods implemented:
+        
+        - max heapify
+        - heapsort
+        
 - [Priority Queues](priority_queue.py)
+
+    Methods implemented:
+        
+        - return the max element
+        - remove the max element from the queue
+        - increase key
+        - insert an element to the queue
+        
 - [Directed Graph](graph.py) 
+
+    Methods implemented:
+        
+        - add edges to the graph
+        - breath first search
 
 ## Sorting Algorithms
 - [Insertion Sort](insertion_sort.py)
