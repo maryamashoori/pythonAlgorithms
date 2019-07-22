@@ -3,20 +3,21 @@
 Python implementations of common computer science data structures & algorithms.
 
 ## Data Structures 
-- [Binary Search Tree](BinarySearchTree.py)
-- [Queue](Queue.py)
-- [Max Heap](MaxHeap.py)
-- [Priority Queues](PriorityQueue.py)
+- [Binary Search Tree](binary_search_tree.py)
+- [Queue](queue.py)
+- [Max Heap](maxheap.py)
+- [Priority Queues](priority_queue.py)
+- [Directed Graph](graph.py) 
 
 ## Sorting Algorithms
-- [Insertion Sort](InsertionSort.py)
-- [Merge Sort](MergeSort.py)
-- [Heap Sort](MaxHeap.py)
-- [Quicksort and Randomized Quicksort](QuickSort.py)
-- [Counting Sort](CountingSort.py)
+- [Insertion Sort](insertion_sort.py)
+- [Merge Sort](merge_sort.py)
+- [Heap Sort](maxheap.py)
+- [Quicksort and Randomized Quicksort](quick_sort.py)
+- [Counting Sort](counting_sort.py)
 
-## Searching Algorithms
-- [Breadth First Search](BreathFirstSearch.py)
+## Traversal
+- [Breadth First Search](graph.py)
 
 ## Wishlist
 

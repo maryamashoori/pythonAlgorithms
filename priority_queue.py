@@ -6,7 +6,7 @@
 #   Created by Maryam Ashoori on July 2019.
 #   Tested in Python 3.7
 
-from MaxHeap import Max_heap
+from maxheap import Max_heap
 
 class Priority_queue(Max_heap):
 
