@@ -36,6 +36,13 @@ Python implementations of common computer science data structures & algorithms.
         
         - add edges to the graph
         - breath first search
+        
+- [Weighted Directed Graph](weighted_graph.py) 
+        
+        - add edges to the graph
+        - breath first search
+        - Dijkstra’s shortest path algorithm
+        
 
 ## Sorting Algorithms
 - [Insertion Sort](insertion_sort.py)
@@ -46,11 +53,11 @@ Python implementations of common computer science data structures & algorithms.
 
 ## Traversal
 - [Breadth First Search](graph.py)
+- [Dijkstra's shortest path algorithm](weighted_graph.py)
 
 ## Wishlist
 
 - [Splay Trees](https://en.wikipedia.org/wiki/Splay_tree)
-- [Djikstra's Algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 - [Kruskal's Algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 - [A* Search](https://en.wikipedia.org/wiki/A*_search_algorithm)
 - [Alpha-Beta Pruning](https://en.wikipedia.org/wiki/Alpha–beta_pruning)
