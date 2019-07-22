@@ -4,6 +4,16 @@ Python implementations of common computer science data structures & algorithms.
 
 ## Data Structures 
 - [Binary Search Tree](binary_search_tree.py)
+    
+    Methods implemented:
+        
+        - insertion
+        - traversal (inorder, preorder, postorder)
+        - calculate height of the tree
+        - search an element in the tree
+        - delete a node from the tree
+        - find the min element in the tree
+        
 - [Queue](queue.py)
 - [Max Heap](maxheap.py)
 - [Priority Queues](priority_queue.py)
