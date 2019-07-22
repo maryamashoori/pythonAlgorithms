@@ -13,8 +13,7 @@ def counting_sort(input):
     max = np.amax(input)
     temp = []
     sorted_input = input.copy()
-    for i in range(max+1):
-        temp.append(0)
+    temp = [0] * (max+1) # initializes the value of temp with 0 for each digit
     for element in range(len(input)):
         temp[input[element]-1] +=1
     for j in range(1, max+1):
