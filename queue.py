@@ -14,6 +14,7 @@
 #       4- dequeue
 #       5- check if the queue is empty
 
+
 class Queue:
     def __init__(self):
         self.queue = []
@@ -53,13 +54,13 @@ class Queue:
         else:
             return self.queue.pop(0)
 
-
     # checks if the queue is empty
     def is_empty(self):
         if len(self.queue) == 0:
             return True
         else:
             return False
+
 
 if __name__ == "__main__":
     q = Queue()

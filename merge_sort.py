@@ -11,29 +11,28 @@
 # Merge sort is often the preferred sorting algorithm for a linked list.
 
 
-class Merge_sort:
+class MergeSort:
 
     # Time Complexity: O(n log n)
     # Extra space needed: O(n) in merge function
-    def merge_sort(self, mylist):
-        middle = int(len(mylist)/2)
+    def merge_sort(self, my_list):
+        middle = int(len(my_list)/2)
         if middle != 0:
-            left = self.merge_sort(mylist[:middle])
-            right = self.merge_sort(mylist[middle:])
+            left = self.merge_sort(my_list[:middle])
+            right = self.merge_sort(my_list[middle:])
             print("merging", left, right)
             return self.merge(left, right)
-        return mylist
-
+        return my_list
 
     # merge function merges two sorted list of list1 and list2
-    def merge(self, list1,list2):
+    def merge(self, list1, list2):
         temp = []
-        i1 = 0 #pointer to the beginning of list 1
-        i2 = 0 # pointer to the beginning of list 2
+        i1 = 0  # pointer to the beginning of list 1
+        i2 = 0  # pointer to the beginning of list 2
         while i1 < len(list1) or i2 < len(list2):
             if i1 < len(list1) and i2 < len(list2):
                 if list1[i1] < list2[i2]:
-                    temp.append (list1[i1])
+                    temp.append(list1[i1])
                     i1 += 1
                 else:
                     temp.append(list2[i2])
@@ -46,9 +45,10 @@ class Merge_sort:
                 i2 += 1
         return temp
 
+
 if __name__ == "__main__":
     input = [1,9,3,6,2,4]
-    msort =Merge_sort()
+    msort = MergeSort()
     print(msort.merge_sort(input))
 
 

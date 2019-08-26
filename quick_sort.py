@@ -4,9 +4,10 @@
 #   Created by Maryam Ashoori on July 2019.
 #   Tested in Python 3.7
 
-class Quick_sort:
-    def __init__(self, input):
-        self.elements = input
+
+class QuickSort:
+    def __init__(self, input_element):
+        self.elements = input_element
 
     # sorts through divide and concur
     # Performance complexity: Average O(n log n) -- It calls partition log n times and parttion is O(n)
@@ -54,15 +55,16 @@ class Quick_sort:
         self.elements[random_index] = temp
         return self.partition(start, end)
 
+
 if __name__ == "__main__":
     input = [2, 8, 7, 1, 3, 5, 6, 4]
-    qsort = Quick_sort(input)
-    print(f"input before sorting: {qsort.elements}")
-    qsort.quick_sort(0, len(input))
-    print(f"input after sorting: {qsort.elements}")
+    q_sort = QuickSort(input)
+    print(f"input before sorting: {q_sort.elements}")
+    q_sort.quick_sort(0, len(input))
+    print(f"input after sorting: {q_sort.elements}")
 
-    #Randomized Quick sort
-    rqsort = Quick_sort(input)
-    print(f"input before sorting: {rqsort.elements}")
-    rqsort.randomized_quick_sort(0, len(input))
-    print(f"input after sorting: {rqsort.elements}")
+    # Randomized Quick sort
+    rq_sort = QuickSort(input)
+    print(f"input before sorting: {rq_sort.elements}")
+    rq_sort.randomized_quick_sort(0, len(input))
+    print(f"input after sorting: {rq_sort.elements}")

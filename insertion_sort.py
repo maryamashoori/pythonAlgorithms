@@ -9,14 +9,15 @@
 # In-place sorting algorithm
 
 
-def insertion_sort(mylist):
-    for key in range(len(mylist)):
+def insertion_sort(my_list):
+    for key in range(len(my_list)):
         for i in range(key):
-            if mylist[i] > mylist[key]:
-                temp = mylist[key]
-                mylist[key] = mylist[i]
-                mylist[i] = temp
-    return mylist
+            if my_list[i] > my_list[key]:
+                temp = my_list[key]
+                my_list[key] = my_list[i]
+                my_list[i] = temp
+    return my_list
+
 
 if __name__ == '__main__':
-    print (insertion_sort([2, 3, 1, 8, 3, 4]))
+    print(insertion_sort([2, 3, 1, 8, 3, 4]))

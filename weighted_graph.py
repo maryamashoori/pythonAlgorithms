@@ -15,13 +15,13 @@ from collections import defaultdict
 class Graph:
     def __init__(self):
         self.graph = defaultdict(list)
-        self.vertices = [] #storing the set of vertices
+        self.vertices = []  # storing the set of vertices
 
     def add_edges(self, from_node, to_node, weight):
         edge = [to_node, weight]
         self.graph[from_node].append(edge)
         if from_node not in self.vertices:
-            self.vertices.append (from_node)
+            self.vertices.append(from_node)
 
     def find_min_distance (self, start, visited, distance):
         min_distance = float("inf")
@@ -46,7 +46,7 @@ class Graph:
     def dijkstra(self, start):
         distance = {}
         for node in self.vertices:
-            distance[node] = float("inf") #set the initial distance to INF
+            distance[node] = float("inf")  # set the initial distance to INF
         distance[start] = 0
         visited = []
         while len(visited) is not len(self.vertices):
@@ -81,6 +81,7 @@ class Graph:
         if len(path) < len(self.graph):
             print("Error, not every node could be reached from the starting node")
         return path
+
 
 if __name__ == "__main__":
 

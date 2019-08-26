@@ -7,6 +7,7 @@
 
 import numpy as np
 
+
 # Counting sort is a linear sort algorithm on an an array of digits that are bounded to an upper bound of max
 # Performance complexity is O(n+max)
 def counting_sort(input):
@@ -22,6 +23,7 @@ def counting_sort(input):
         sorted_input[temp[input[element]-1]-1] = input[element]
         temp[input[element]-1] -=1
     return sorted_input
+
 
 if __name__=="__main__":
     input = [2, 8, 3, 5, 7, 5, 6, 4]

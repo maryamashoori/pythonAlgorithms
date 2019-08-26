@@ -22,7 +22,7 @@ class Node:
         self.left = None
 
 
-class Binary_search_tree:
+class BinarySearchTree:
     def __init__(self):
         self.root = None
 
@@ -32,20 +32,20 @@ class Binary_search_tree:
     # The worst case time complexity of insertion is O(h) where h is height of Binary Search Tree.
     # When a tree is not balanced, it can be O(n)
     def insert(self, value):
-        if (self.root == None):
+        if self.root is None:
             self.root = Node(value)
         else:
             self._insert(self.root, value)
 
     def _insert(self, curr_node, value):
-        if (value <curr_node.value):
-            if curr_node.left == None:
+        if value < curr_node.value:
+            if curr_node.left is None:
                 curr_node.left = Node(value)
                 return
             else:
                 self._insert(curr_node.left, value)
-        elif (value > curr_node.value):
-            if curr_node.right == None:
+        elif value > curr_node.value:
+            if curr_node.right is None:
                 curr_node.right = Node(value)
             else:
                 self._insert(curr_node.right, value)
@@ -132,7 +132,7 @@ class Binary_search_tree:
         if curr_node is not None:
             if target == curr_node.value:
                 return True
-            elif (target > curr_node.value):
+            elif target > curr_node.value:
                 return self._search(curr_node.right, target)
             else:
                 return self._search(curr_node.left, target)
@@ -186,20 +186,20 @@ class Binary_search_tree:
 
 
 # Testing the class
-tree = Binary_search_tree ()
+tree = BinarySearchTree ()
 tree.insert(10)
 tree.insert(5)
 tree.insert(6)
 tree.insert(4)
 tree.insert(5)
 print("inorder traversal:")
-tree.inorder_traversal() #sorts the input
+tree.inorder_traversal()  # sorts the input
 print("preorder traversal:")
-tree.preorder_traversal() #sorts the input
+tree.preorder_traversal()  # sorts the input
 print("Height =", tree.height())
 tree.delete(5)
 print("postorder traversal:")
-tree.postorder_traversal() #sorts the input
+tree.postorder_traversal()  # sorts the input
 print("Target found = ", tree.search(5))
 
 

@@ -12,7 +12,7 @@
 #       2- heapsort
 
 
-class Max_heap:
+class MaxHeap:
     # Building a max heap
     # Complexity: O(n)
     def __init__(self, input):
@@ -60,8 +60,9 @@ class Max_heap:
         # return ",".join(map(lambda x: str(x), self.queue))
         return str(self.elements)
 
+
 if __name__ == "__main__":
-    myheap = Max_heap([16, 4, 10, 14, 7, 9, 3, 2, 8, 1])
+    myheap = MaxHeap([16, 4, 10, 14, 7, 9, 3, 2, 8, 1])
     print (myheap)
     myheap.heap_sort()
     print (myheap.is_empty())
