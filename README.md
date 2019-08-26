@@ -3,6 +3,12 @@
 Python implementations of common computer science data structures & algorithms.
 
 ## Data Structures 
+- [Linked List](linked_list.py)
+        
+        - insertion
+        - printing the list
+        - Removing duplicates
+        
 - [Binary Search Tree](binary_search_tree.py)
         
         - insertion
