@@ -45,7 +45,7 @@ class MaxHeap:
     # Performance complexity: O(n log n) -- n times calling max_heapify function
     def heap_sort(self):
         while self.heap_size > 0:
-            print(self.elements[0])
+            print(self.elements[0], end=" ")
             self.elements[0] = self.elements[self.heap_size-1]
             self.heap_size -= 1
             self.max_heapify(0)

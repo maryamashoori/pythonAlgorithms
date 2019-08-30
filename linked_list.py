@@ -63,7 +63,7 @@ class LinkedList:
         if curr_node is None:
             return
         else:
-            print(curr_node.value)
+            print(curr_node.value, end=" ")
             self._print(curr_node.next)
 
     # Function to remove duplicates

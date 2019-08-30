@@ -69,7 +69,7 @@ class BinarySearchTree:
             return
         else:
             self._inorder_traversal(curr_node.left)
-            print(curr_node.value)
+            print(curr_node.value, end=" ")
             self._inorder_traversal(curr_node.right)
 
     # Preorder traversal
@@ -84,7 +84,7 @@ class BinarySearchTree:
         if curr_node is None:
             return
         else:
-            print(curr_node.value)
+            print(curr_node.value, end=" ")
             self._preorder_traversal(curr_node.left)
             self._preorder_traversal(curr_node.right)
 
@@ -96,15 +96,15 @@ class BinarySearchTree:
         else:
             print("Empty tree!")
 
-    def _postorder_traversal (self, curr_node):
+    def _postorder_traversal(self, curr_node):
         if curr_node is None:
             return
         else:
             self._postorder_traversal(curr_node.left)
             self._postorder_traversal(curr_node.right)
-            print(curr_node.value)
+            print(curr_node.value, end=" ")
 
-    # Height : Returns the hight of the tree
+    # Height : Returns the height of the tree
     # Complexity: O(log n)
     def height(self):
         if self.root is not None:
